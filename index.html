@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+   <style>
+
+
+       *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body{
+            position: relative;
+        }
+
+        .clck{
+            position: absolute;
+            width: 33px;
+            height: 34px;
+            background-color: #ffffff00;
+            border-radius: 72%;
+            border: none;
+            left: 626px;
+            right: 0px;
+            top: 504px;
+            bottom: 0px;
+    }
+
+        #myImage{
+            width: 100%;
+            height: 589px;;
+      }
+
+
+    </style>
+
+</head>
+<body>
+
+
+
+    <button onclick="toggleLight()" class="clck"></button>
+
+<img id="myImage" src="dark.png">
+
+
+
+<script>
+function toggleLight() {
+    var image = document.getElementById('myImage');
+    if (image.src.includes('light.png')) {
+        image.src = 'dark.png';
+    } else {
+        image.src = 'light.png';
+    }
+}
+</script>
+</body>
+</html>
